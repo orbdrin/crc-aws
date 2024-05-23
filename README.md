@@ -12,7 +12,7 @@ Before even attempting the challenge proper, the suggested first step is earning
 ## Site Content (HTML, CSS, JavaScript)
 Being very rusty in HTML (think the Frontpage days) and having minimal experience with CSS and JavaScript, I opted to keep things simple and found a one page resume template that suit my needs. The site was done in HTML and styled with CSS to mold it into a hopefully presentable resume/CV. A placeholder JavaScript file for our visitor counter was created and referenced in the HTML file as well. We'll return to the JS script in a bit.
 
-## Terraform (Infrastructure as Code)
+## Infrastructure as Code (Terraform)
 With the growing ubiquity of Terraform as an IaC tool, I knew that I'd want to incorporate Terraform instead of the AWS native CloudFormation to build my infrastructure from the ground up. The official documentation proved invaluable in figuring things out, and I made copious use of the examples. I ended up dividing up the project into two separate modules for the frontend and backend services, with an additional runtime module which calls on both and allows for overriding the default variables at runtime to keep things neat.
 
 ## Frontend (S3, CloudFront, Route 53 (DNS), ACM)
